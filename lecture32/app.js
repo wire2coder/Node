@@ -12,7 +12,6 @@ console.log(obj[p1])
 
 
 // arrays
-
 var array1 = [];
 
 array1.push(
@@ -30,3 +29,4 @@ array1.push(
         console.log('push 3')        
     }
 )
+
