@@ -1,5 +1,5 @@
 module.exports = {
     events: {
-        GREET: 'ddd'
+        GREET: 'greet'
     }    
 }
