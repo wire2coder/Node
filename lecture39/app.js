@@ -4,9 +4,7 @@ var events = require('events')
 // function constructor
 function Person() {
 
-    events.apply(this);
-
-    this.firstname = 'Youssef';
+    this.firstname = 'Ulroda';
     this.lastname = 'Kouch';
 }
 
@@ -17,6 +15,9 @@ Person.prototype.greet = function() {
 
 // function constructor
 function Policeman() {
+    // empty object create and 'this' 'points' to it
+    // pass the empty object into Person constructor
+    Person.apply(this);
     this.badgeNumber = '39749374';
 }
 
