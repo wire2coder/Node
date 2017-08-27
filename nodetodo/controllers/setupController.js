@@ -32,7 +32,7 @@ module.exports = function(app) {
             if (err) {
                 console.log(err)
             } else {
-                res.json(results);
+                res.send(results);
             }
         })
 

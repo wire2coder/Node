@@ -5,6 +5,7 @@ var port = process.env.PORT || 3000;
 
 var config = require('./config/index.js');
 var setupController = require('./controllers/setupController.js');
+var apiController = require('./controllers/apiController.js');
 
 if ( mongoose.connect(config.connectStrting) ) {
     console.log('Connected to database');
@@ -19,6 +20,7 @@ app.get('/', function(req, res) {
 });
 
 setupController(app);
+apiController(app);
 
 app.listen(port, function() {
     console.log(`Express server running on port ${port}`);
